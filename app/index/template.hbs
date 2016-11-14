@@ -1,0 +1,53 @@
+<div class="hero">
+  <p>Get Food Delivered FAST!</p>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <div class="grid__item grid__item--menu">
+      <div class="grid__title">Menu</div>
+      {{#each model as |value|}}
+
+        <div class="card">
+          <p class="card__header">{{ value.name }}</p>
+
+          {{#each value.menuItems as |item|}}
+            <div class="card__content card__content--flex">
+              <div class="card__item">
+                <div class="card__text">
+                  <p class="card__title">{{ item.name }}</p>
+                  <p class="card__subtitle">{{ item.description }}</p>
+                </div>
+                <div class="card__price">${{ item.price }}</div>
+              </div>
+              <button class="card__btn">Order</button>
+            </div>
+          {{/each}}
+        </div>
+
+      {{/each}}
+    </div>
+
+    <div class="grid__item">
+      <div class="grid__title">Your Order</div>
+      <div class="card">
+        <p class="card__header">Cart</p>
+        <div class="card__content">
+          <div class="card__hero">
+            <p class="card__title">Add Something</p>
+            <p class="card__subtitle">No items have been added to the cart!</p>
+          </div>
+
+          <div class="card__sum">
+            <p class="card__total">Total</p>
+            <p class="card__amount">$0.00</p>
+          </div>
+
+          <div class="card__hero">
+            <button class="card__btn card__btn--full">Submit Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

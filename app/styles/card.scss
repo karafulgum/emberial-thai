@@ -1,0 +1,71 @@
+.card {
+  background: $c-white;
+  box-shadow: $box-shadow;
+
+  &__header {
+    margin-bottom: 0;
+    padding: 0.5rem;
+    background: $c-primary;
+    color: $c-white;
+  }
+
+  &__content {
+    border-bottom: 0.1rem solid $c-dark-gray;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--order {
+      padding: 1rem;
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  &__btn {
+    border: 0;
+    background: $c-success;
+    color: $c-white;
+    outline: 0;
+    cursor: pointer;
+
+    &--full {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+
+  &__hero {
+    padding: 1rem;
+  }
+
+  &__sum {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1rem solid $c-dark-gray;
+    border-bottom: 0.1rem solid $c-dark-gray;
+  }
+}
