@@ -1,13 +1,12 @@
-
-  <p class="title">Categories</p>
-  <div class="options">
-    <div class="options__row options__row--end">
-      {{#link-to "admin.category.new" class="category-btn"}}Add New{{/link-to}}
-    </div>
-    {{#each model as |value|}}
-    <div class="options__row">
-    {{ value.name }}
-    {{#link-to "admin.category"}}Details{{/link-to}}
-    </div>
-    {{/each}}
+<p class="title">Categories</p>
+<div class="options">
+  <div class="options__row options__row--end">
+    {{#link-to "admin.category.new" class="category-btn" }}Add New{{/link-to}}
   </div>
+  {{#each model as |value|}}
+    <div class="options__row">
+      {{ value.name }}
+      {{#link-to "admin.category.detail"}}Details{{/link-to}}
+    </div>
+  {{/each}}
+</div>

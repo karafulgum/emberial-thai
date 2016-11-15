@@ -4,19 +4,6 @@ export default Ember.Route.extend({
   model() {
     return [
       {
-        name: 'Small Plates',
-        menuItems: [
-          {
-            name: 'Poke',
-            price: 11,
-            description: 'Tuna, Sesame Chicharron, Chili Oil, Apple, Raddish'
-          }, {
-            name: 'Pork Gyoza',
-            price: 7,
-            description: 'Contry Ponzu'
-          }
-        ]
-      }, {
         name: 'Main Courses',
         menuItems: [
           {
@@ -34,7 +21,7 @@ export default Ember.Route.extend({
           }
         ]
       }
-    ]
 
+    ]
   }
 });

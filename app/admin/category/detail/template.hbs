@@ -1,0 +1,14 @@
+{{#each model as |value|}}
+<p class="title">{{ value.name }}</p>
+<div class="options">
+  <div class="options__row options__row--end">
+    {{#link-to "admin.category.new" class="category-btn" }}Add New{{/link-to}}
+  </div>
+    {{#each value.menuItems as |item|}}
+      <div class="options__row">
+        {{ item.name }}
+        {{#link-to "admin.category.detail"}}Details{{/link-to}}
+      </div>
+    {{/each}}
+</div>
+{{/each}}
