@@ -1,38 +1,58 @@
 .form {
   margin-top: 1.5rem;
   background: $c-white;
+  box-shadow: $box-shadow;
 
   &__title {
-    background: $c-primary;
-    color: $c-white;
     margin: 0;
     padding: 0.5rem;
+    background: $c-primary;
+    color: $c-white;
   }
 
-  &__input {
+  &__group {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
-    padding: 0 0.5rem;
+
+    &--flex {
+      display: flex;
+
+      span {
+        padding: 0 0.5rem;
+        border: 0.1rem solid $c-dark-gray;
+        background: $c-gray;
+        font-size: 0.8rem;
+      }
+
+      input {
+        flex-grow: 1;
+      }
+    }
   }
 
   &__label {
     font-size: 0.8rem;
   }
 
-  &__text {
+  &__input {
+    border: 0.1rem solid $c-dark-gray;
     outline: 0;
 
-    &:focus {
-      border: 0.15rem solid $c-primary;
+    &--border {
+      border-left: 0;
     }
+
+    // &:focus {
+    //   border: 0.15rem solid $c-primary;
+    // }
   }
 
   &__btns {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
     padding: 0.5rem;
     border-top: 0.1rem solid $c-gray;
-    margin-top: 1rem;
   }
 }

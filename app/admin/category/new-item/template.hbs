@@ -1,0 +1,27 @@
+<form class="form">
+  <p class="form__title">New Menu Item For Appetizers</p>
+
+  <div class="form__group">
+    <label for="name" class="form__label">Name</label>
+    <input class="form__input" type="text" name="name" id="name" required=true>
+  </div>
+
+  <div class="form__group">
+    <label for="price" class="form__label">Price</label>
+  <div class="form__group--flex">
+    <span>$</span>
+    <input class="form__input form__input--border" type="text" name="price" id="price" required=true>
+  </div>
+</div>
+
+
+  <div class="form__group">
+    <label for="description" class="form__label">Description</label>
+    <input class="form__input" type="text" name="description" id="description" required=true>
+  </div>
+
+  <div class="form__btns">
+    {{#link-to "admin.category.detail" class="category-btn" }}Back{{/link-to}}
+    <button type="submit" class="category-btn">Submit</button>
+  </div>
+</form>

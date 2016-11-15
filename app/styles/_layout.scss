@@ -10,7 +10,7 @@
   margin: 0 -1rem;
 
   &__item {
-    flex-basis: calc( 100% / 3 - 1rem - 1rem);
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
     margin: $m-gutter;
 
     &--menu {

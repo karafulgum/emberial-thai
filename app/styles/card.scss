@@ -29,8 +29,8 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
     width: 100%;
+    padding: 0.5rem;
   }
 
   &__title {
@@ -45,15 +45,15 @@
 
   &__btn {
     border: 0;
+    outline: 0;
     background: $c-success;
     color: $c-white;
-    outline: 0;
     cursor: pointer;
 
     &--full {
       width: 100%;
-      text-align: center;
       padding: 1rem;
+      text-align: center;
     }
   }
 
@@ -62,9 +62,9 @@
   }
 
   &__sum {
-    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
     border-top: 0.1rem solid $c-gray;
     border-bottom: 0.1rem solid $c-gray;
   }
