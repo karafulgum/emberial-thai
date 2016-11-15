@@ -1,0 +1,11 @@
+<form class="form">
+  <p class="form__title">New Category</p>
+    <div class="form__input">
+      <label for="name" class="form__label">Name</label>
+      <input class="form__text" type="text" name="name" id="name" required=true>
+    </div>
+  <div class="form__btns">
+    {{#link-to "admin.category" class="category-btn"}}Back{{/link-to}}
+    <button type="submit" class="category-btn">Submit</button>
+  </div>
+</form>

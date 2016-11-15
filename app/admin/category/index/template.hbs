@@ -1,8 +1,8 @@
-{{ outlet }}
+
   <p class="title">Categories</p>
   <div class="options">
     <div class="options__row options__row--end">
-      <button class="category-btn">Add New</button>
+      {{#link-to "admin.category.new" class="category-btn"}}Add New{{/link-to}}
     </div>
     {{#each model as |value|}}
     <div class="options__row">

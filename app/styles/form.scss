@@ -1,0 +1,38 @@
+.form {
+  margin-top: 1.5rem;
+  background: $c-white;
+
+  &__title {
+    background: $c-primary;
+    color: $c-white;
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  &__label {
+    font-size: 0.8rem;
+  }
+
+  &__text {
+    outline: 0;
+
+    &:focus {
+      border: 0.15rem solid $c-primary;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-top: 0.1rem solid $c-gray;
+    margin-top: 1rem;
+  }
+}

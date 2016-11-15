@@ -10,7 +10,7 @@
   }
 
   &__content {
-    border-bottom: 0.1rem solid $c-dark-gray;
+    border-bottom: 0.1rem solid $c-gray;
 
     &--flex {
       display: flex;
@@ -65,7 +65,7 @@
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
-    border-top: 0.1rem solid $c-dark-gray;
-    border-bottom: 0.1rem solid $c-dark-gray;
+    border-top: 0.1rem solid $c-gray;
+    border-bottom: 0.1rem solid $c-gray;
   }
 }
