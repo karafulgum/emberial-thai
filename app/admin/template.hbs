@@ -1,5 +1,4 @@
 <div class="container">
-  <button class="category-btn">{{#link-to "admin.category"}}Categories{{/link-to}}</button>
+  {{#link-to "admin.category" class="category-btn"}}Categories{{/link-to}}
+  {{outlet}}
 </div>
-
-{{outlet}}

@@ -1,0 +1,34 @@
+.category-btn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: $c-white;
+
+  background: $c-success;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: $c-white;
+
+  &.active {
+    background: $c-primary;
+  }
+}
+
+.options {
+  box-shadow: $box-shadow;
+  background: $c-white;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    &:hover {
+      background: $c-gray;
+    }
+
+    &--end {
+      justify-content: flex-end;
+    }
+  }
+}
