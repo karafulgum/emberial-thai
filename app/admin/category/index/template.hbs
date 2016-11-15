@@ -5,8 +5,8 @@
   </div>
   {{#each model as |value|}}
     <div class="options__row">
-      {{ value.name }}
-      {{#link-to "admin.category.detail"}}Details{{/link-to}}
+      <span>{{ value.name }}</span>
+      <span>{{#link-to "admin.category.detail"}}Details{{/link-to}}</span>
     </div>
   {{/each}}
 </div>

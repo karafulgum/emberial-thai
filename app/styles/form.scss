@@ -19,10 +19,13 @@
       display: flex;
 
       span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 0 0.5rem;
         border: 0.1rem solid $c-dark-gray;
         background: $c-gray;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
       }
 
       input {
@@ -36,6 +39,7 @@
   }
 
   &__input {
+    padding: 0.2rem;
     border: 0.1rem solid $c-dark-gray;
     outline: 0;
 

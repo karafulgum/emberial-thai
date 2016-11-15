@@ -6,8 +6,8 @@
   </div>
     {{#each value.menuItems as |item|}}
       <div class="options__row">
-        {{ item.name }}
-        {{#link-to "admin.category.detail"}}Details{{/link-to}}
+        <span>{{ item.name }}</span>
+        <span>{{#link-to "admin.category.detail"}}Details{{/link-to}}</span>
       </div>
     {{/each}}
 </div>
