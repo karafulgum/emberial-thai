@@ -1,0 +1,14 @@
+{{ outlet }}
+<div class="container">
+  <p class="title">Categories</p>
+  <div class="row">
+    <div></div>
+    <button class="category-btn">Add New</button>
+  </div>
+{{#each model as |value|}}
+<div class="row">
+  {{#link-to "admin.category"}}{{ value.name }}{{/link-to}}
+</div>
+{{/each}}
+
+</div>

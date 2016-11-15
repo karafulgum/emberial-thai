@@ -17,14 +17,9 @@
       flex-grow: 1;
     }
   }
-
-  &__title {
-  font-weight: bold;
-  border-bottom: 0.1rem solid $c-black;
-  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .grid {
     &__item {
       flex-basis: calc(100% / 1 - 1rem - 1rem);
