@@ -6,7 +6,7 @@
   {{#each model as |value|}}
     <div class="options__row">
       <span>{{ value.name }}</span>
-      <span>{{#link-to "admin.category.detail"}}Details{{/link-to}}</span>
+      <span>{{#link-to "admin.category.detail" value.id}}Details{{/link-to}}</span>
     </div>
   {{/each}}
 </div>

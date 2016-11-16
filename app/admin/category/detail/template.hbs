@@ -1,14 +1,13 @@
-{{#each model as |value|}}
-<p class="title">{{ value.name }}</p>
+
+<p class="title">{{ model.name }}</p>
 <div class="options">
   <div class="options__row options__row--end">
     {{#link-to "admin.category.new-item" class="category-btn" }}Add New{{/link-to}}
   </div>
-    {{#each value.menuItems as |item|}}
+    {{#each model.menuItems as |item|}}
       <div class="options__row">
         <span>{{ item.name }}</span>
-        <span>{{#link-to "admin.category.detail"}}Details{{/link-to}}</span>
+        <span><a href="">Details</a></span>
       </div>
     {{/each}}
 </div>
-{{/each}}
