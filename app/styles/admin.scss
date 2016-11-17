@@ -9,13 +9,20 @@
   text-decoration: none;
   cursor: pointer;
 
+  &--danger {
+    background: $c-warning;
+  }
+
   &.active {
     background: $c-primary;
   }
 }
 
 .options {
+  width: 100%;
+  border: 0;
   background: $c-white;
+  border-collapse: collapse;
   box-shadow: $box-shadow;
 
   &__row {
@@ -23,9 +30,18 @@
     justify-content: space-between;
     padding: 0.5rem;
 
-    &:hover {
+    &--gray {
       background: $c-gray;
+      font-weight: bold;
     }
+
+    &--flex {
+      display: flex;
+    }
+
+    // &:hover {
+    //   background: $c-gray;
+    // }
 
     &--end {
       justify-content: flex-end;

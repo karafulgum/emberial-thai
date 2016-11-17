@@ -1,12 +1,16 @@
 <p class="title">Categories</p>
-<div class="options">
-  <div class="options__row options__row--end">
-    {{#link-to "admin.category.new" class="category-btn" }}Add New{{/link-to}}
+<table class="options">
+  <div class="options__row">
+    {{#link-to "admin.item.edit" class="category-btn category-btn--danger" }}Delete{{/link-to}}
+    {{#link-to "admin.category.new-item" class="category-btn" }}Add New Menu Item{{/link-to}}
   </div>
+  <thead class="options__row options__row--gray">
+    <span>Name</span>
+  </thead>
   {{#each model as |value|}}
-    <div class="options__row">
+  <tbody class="options__row options__row--flex">
       <span>{{ value.name }}</span>
       <span>{{#link-to "admin.category.detail" value.id}}Details{{/link-to}}</span>
-    </div>
+    </tbody>
   {{/each}}
-</div>
+</table>

@@ -1,13 +1,16 @@
-
 <p class="title">{{ model.name }}</p>
-<div class="options">
-  <div class="options__row options__row--end">
-    {{#link-to "admin.category.new-item" class="category-btn" }}Add New{{/link-to}}
-  </div>
+  <table class="options">
+    <div class="options__row">
+      {{#link-to "admin.item.edit" class="category-btn category-btn--danger" }}Delete{{/link-to}}
+      {{#link-to "admin.category.new-item" class="category-btn" }}Add New{{/link-to}}
+    </div>
+    <thead class="options__row options__row--gray">
+      <span>Name</span>
+    </thead>
     {{#each model.menuItems as |item|}}
-      <div class="options__row">
+    <tbody class="options__row options__row--flex">
         <span>{{ item.name }}</span>
         <span><a href="">Details</a></span>
-      </div>
+      </tbody>
     {{/each}}
-</div>
+  </table>

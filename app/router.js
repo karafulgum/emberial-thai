@@ -13,7 +13,12 @@ Router.map(function() {
       this.route('detail', { path: '/:id'});
       this.route('new-item', { path: '/:id/new-item'});
     });
+
+    this.route('item', function() {
+      this.route('edit');
+    });
   });
+  this.route('edit');
 });
 
 export default Router;
