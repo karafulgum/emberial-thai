@@ -1,16 +1,15 @@
 <p class="title">Categories</p>
-<table class="options">
-  <div class="options__row">
-    {{#link-to "admin.item.edit" class="category-btn category-btn--danger" }}Delete{{/link-to}}
-    {{#link-to "admin.category.new-item" class="category-btn" }}Add New Menu Item{{/link-to}}
+<table class="table">
+  <div class="table__row table__row--end">
+    {{#link-to "admin.category.new-item" model.id class="category-btn" }}Add New{{/link-to}}
   </div>
-  <thead class="options__row options__row--gray">
+  <thead class="table__row table__row--header">
     <span>Name</span>
   </thead>
   {{#each model as |value|}}
-  <tbody class="options__row options__row--flex">
+  <tbody class="table__row">
       <span>{{ value.name }}</span>
-      <span>{{#link-to "admin.category.detail" value.id}}Details{{/link-to}}</span>
-    </tbody>
+      <span>{{#link-to "admin.category.detail" value.id}}Manage{{/link-to}}</span>
+  </tbody>
   {{/each}}
 </table>

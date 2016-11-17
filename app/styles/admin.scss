@@ -18,9 +18,8 @@
   }
 }
 
-.options {
+.table {
   width: 100%;
-  border: 0;
   background: $c-white;
   border-collapse: collapse;
   box-shadow: $box-shadow;
@@ -30,21 +29,21 @@
     justify-content: space-between;
     padding: 0.5rem;
 
-    &--gray {
+    &--end {
+      justify-content: flex-end;
+    }
+
+    &--header {
       background: $c-gray;
       font-weight: bold;
     }
 
-    &--flex {
-      display: flex;
-    }
+    &--group {
+      padding: 0;
 
-    // &:hover {
-    //   background: $c-gray;
-    // }
-
-    &--end {
-      justify-content: flex-end;
+      a {
+        margin-left: 0.3rem;
+      }
     }
   }
 }
