@@ -1,5 +1,5 @@
 <div class="form">
-  <p class="form__title">Editing: {{model.name}}</p>
+  <p class="form__title">Editing {{model.name}}</p>
 
   {{#simple-form startingValues=model onsubmit=(action "saveForm") as |formValues|}}
   <div class="form__group">
