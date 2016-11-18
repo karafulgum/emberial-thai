@@ -18,7 +18,6 @@ Router.map(function() {
       this.route('edit', { path: '/:id'});
     });
   });
-  this.route('edit');
 });
 
 export default Router;
