@@ -1,0 +1,15 @@
+<p class="title">Categories</p>
+<table class="table">
+  <div class="table__row table__row--end">
+    {{#link-to "admin.category.new" class="category-btn" }}Add New Category{{/link-to}}
+  </div>
+  <thead class="table__row table__row--header">
+    <span>Name</span>
+  </thead>
+  {{#each model as |value|}}
+  <tbody class="table__row">
+      <span>{{ value.name }}</span>
+      <span>{{#link-to "admin.category.detail" value.id}}Manage{{/link-to}}</span>
+  </tbody>
+  {{/each}}
+</table>

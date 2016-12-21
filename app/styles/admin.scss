@@ -1,0 +1,49 @@
+.category-btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 0;
+  outline: 0;
+  background: $c-success;
+  color: $c-white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--danger {
+    background: $c-warning;
+  }
+
+  &.active {
+    background: $c-primary;
+  }
+}
+
+.table {
+  width: 100%;
+  background: $c-white;
+  border-collapse: collapse;
+  box-shadow: $box-shadow;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    &--end {
+      justify-content: flex-end;
+    }
+
+    &--header {
+      background: $c-gray;
+      font-weight: bold;
+    }
+
+    &--group {
+      padding: 0;
+
+      a {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}

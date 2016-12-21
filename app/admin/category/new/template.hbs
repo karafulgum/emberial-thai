@@ -1,0 +1,11 @@
+<form class="form" {{action "saveForm" name on="submit"}} >
+  <p class="form__title">New Category</p>
+    <div class="form__group">
+      <label for="name" class="form__label">Name</label>
+      {{input class="form__input" type="text" name="name" id="name" value=name}}
+    </div>
+  <div class="form__btns">
+    {{#link-to "admin.category.index" class="category-btn"}}Back{{/link-to}}
+    <button type="submit" name="button" class="category-btn">Submit</button>
+  </div>
+</form>
